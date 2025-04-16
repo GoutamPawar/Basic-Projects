@@ -9,7 +9,7 @@ when bmi < 18.5
   puts "You are underweight."
 when bmi >= 18.5 && bmi < 24.9
   puts "You have a normal weight."
-when bmi >= 25 && bmi < 29.9
+when bmi >= 25 && bmi < 29.9 
   puts "You are overweight."
 else
   puts "You are obese."
