@@ -1,15 +1,12 @@
-
-
-def palindrome?(string)
-    sanitized_string = string.downcase.gsub(/[^a-z0-9]/i, '')
-    sanitized_string == sanitized_string.reverse
+str = "deifid"
+def palindrome(str)
+    str == str.reverse
 end
-
-puts "Enter a string to check if it's a palindrome:"
-input = gets.chomp
-
-if palindrome?(input)
-    puts "'#{input}' is a palindrome!"
-else
-    puts "'#{input}' is not a palindrome."
-end
+puts palindrome(str) 
+str = "madam"
+puts palindrome(str)
+def factorial(n)
+    return 1 if n == 0
+    n * factorial(n - 1)
+end 
+puts factorial(5)
